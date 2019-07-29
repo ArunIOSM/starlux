@@ -1,0 +1,6 @@
+framework module Pods_StarLuxUITests {
+  umbrella header "Pods-StarLuxUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

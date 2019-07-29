@@ -1,0 +1,906 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		153649A0441150C7B840E2BB /* Pods_StarLux.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA5696B82E898B3C0F5E28B1 /* Pods_StarLux.framework */; };
+		2F6FBE1F7B7FD0641DC1B609 /* Pods_StarLuxTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D9704A89493C3C7ECD9D336 /* Pods_StarLuxTests.framework */; };
+		8AA001235CFB7450F082D953 /* Pods_StarLuxUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78B84D2F5CB77A48267B0407 /* Pods_StarLuxUITests.framework */; };
+		9015479C21EDA7B400B26748 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 9015479B21EDA7B400B26748 /* libsqlite3.tbd */; };
+		9015479F21EDBBBB00B26748 /* flightInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9015479E21EDBBBB00B26748 /* flightInfo.swift */; };
+		901547A121EDC31D00B26748 /* unitEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901547A021EDC31D00B26748 /* unitEvents.swift */; };
+		90337062221D1A0000082710 /* SkyFloatingLabelTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9033705F221D19FF00082710 /* SkyFloatingLabelTextField.swift */; };
+		90337063221D1A0000082710 /* UITextField+fixCaretPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90337060221D19FF00082710 /* UITextField+fixCaretPosition.swift */; };
+		90337064221D1A0000082710 /* SkyFloatingLabelTextFieldWithIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90337061221D19FF00082710 /* SkyFloatingLabelTextFieldWithIcon.swift */; };
+		9084F44D21E73AEA002C03C9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9084F44C21E73AEA002C03C9 /* AppDelegate.swift */; };
+		9084F44F21E73AEA002C03C9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9084F44E21E73AEA002C03C9 /* ViewController.swift */; };
+		9084F45221E73AEA002C03C9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9084F45021E73AEA002C03C9 /* Main.storyboard */; };
+		9084F45421E73B34002C03C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9084F45321E73B34002C03C9 /* Assets.xcassets */; };
+		9084F45721E73B34002C03C9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9084F45521E73B34002C03C9 /* LaunchScreen.storyboard */; };
+		9084F46221E73B3D002C03C9 /* StarLuxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9084F46121E73B3D002C03C9 /* StarLuxTests.swift */; };
+		9084F46D21E73B3D002C03C9 /* StarLuxUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9084F46C21E73B3D002C03C9 /* StarLuxUITests.swift */; };
+		9084F81C21E7BABC002C03C9 /* STCollapseTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9084F81921E7BABC002C03C9 /* STCollapseTableView.m */; };
+		9084F81E21E8F18C002C03C9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9084F81D21E8F18A002C03C9 /* GoogleService-Info.plist */; };
+		90AFEB9521F0185300A704D8 /* starlux.db in Resources */ = {isa = PBXBuildFile; fileRef = 90AFEB9421F0185200A704D8 /* starlux.db */; };
+		90AFEB9821F0C9B700A704D8 /* Color.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90AFEB9721F0C9B700A704D8 /* Color.xcassets */; };
+		90AFEB9E21F1777400A704D8 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90AFEB9D21F1777400A704D8 /* CardView.swift */; };
+		90FF631321F2C52F00BCD08C /* SLLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90FF631221F2C52F00BCD08C /* SLLoginView.swift */; };
+		90FF631521F304DE00BCD08C /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90FF631421F304DE00BCD08C /* CustomTextField.swift */; };
+		90FF633021F313E300BCD08C /* DropDownCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90FF632621F313E200BCD08C /* DropDownCell.xib */; };
+		90FF633121F313E300BCD08C /* DPDKeyboardListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90FF632821F313E300BCD08C /* DPDKeyboardListener.swift */; };
+		90FF633221F313E300BCD08C /* DPDConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90FF632921F313E300BCD08C /* DPDConstants.swift */; };
+		90FF633321F313E300BCD08C /* DPDUIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90FF632A21F313E300BCD08C /* DPDUIView+Extension.swift */; };
+		90FF633521F313E300BCD08C /* DropDown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90FF632D21F313E300BCD08C /* DropDown.swift */; };
+		90FF633621F313E300BCD08C /* DropDownCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90FF632E21F313E300BCD08C /* DropDownCell.swift */; };
+		90FF633721F313E300BCD08C /* DropDown+Appearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90FF632F21F313E300BCD08C /* DropDown+Appearance.swift */; };
+		90FF633921F3AB3700BCD08C /* userGroupMember.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90FF633821F3AB3700BCD08C /* userGroupMember.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9084F45E21E73B3D002C03C9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9084F44121E73AE9002C03C9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9084F44821E73AEA002C03C9;
+			remoteInfo = StarLux;
+		};
+		9084F46921E73B3D002C03C9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9084F44121E73AE9002C03C9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9084F44821E73AEA002C03C9;
+			remoteInfo = StarLux;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2D9704A89493C3C7ECD9D336 /* Pods_StarLuxTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StarLuxTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D41E8A6A7539A20AA086E56 /* Pods-StarLuxTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StarLuxTests.debug.xcconfig"; path = "Target Support Files/Pods-StarLuxTests/Pods-StarLuxTests.debug.xcconfig"; sourceTree = "<group>"; };
+		415B5FD14EF1A8EA38BB8B58 /* Pods-StarLux.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StarLux.release.xcconfig"; path = "Target Support Files/Pods-StarLux/Pods-StarLux.release.xcconfig"; sourceTree = "<group>"; };
+		54AFAA65C944C10A8BA68580 /* Pods-StarLuxUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StarLuxUITests.release.xcconfig"; path = "Target Support Files/Pods-StarLuxUITests/Pods-StarLuxUITests.release.xcconfig"; sourceTree = "<group>"; };
+		56D414C959C14B7DFBF25E74 /* Pods-StarLux.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StarLux.debug.xcconfig"; path = "Target Support Files/Pods-StarLux/Pods-StarLux.debug.xcconfig"; sourceTree = "<group>"; };
+		605F2229549DA0797E82EF0D /* Pods-StarLuxTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StarLuxTests.release.xcconfig"; path = "Target Support Files/Pods-StarLuxTests/Pods-StarLuxTests.release.xcconfig"; sourceTree = "<group>"; };
+		73E30309AF4EB5084501C6B6 /* Pods-StarLuxUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StarLuxUITests.debug.xcconfig"; path = "Target Support Files/Pods-StarLuxUITests/Pods-StarLuxUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		78B84D2F5CB77A48267B0407 /* Pods_StarLuxUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StarLuxUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9015479B21EDA7B400B26748 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		9015479E21EDBBBB00B26748 /* flightInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = flightInfo.swift; sourceTree = "<group>"; };
+		901547A021EDC31D00B26748 /* unitEvents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = unitEvents.swift; sourceTree = "<group>"; };
+		9033705F221D19FF00082710 /* SkyFloatingLabelTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SkyFloatingLabelTextField.swift; sourceTree = "<group>"; };
+		90337060221D19FF00082710 /* UITextField+fixCaretPosition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextField+fixCaretPosition.swift"; sourceTree = "<group>"; };
+		90337061221D19FF00082710 /* SkyFloatingLabelTextFieldWithIcon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SkyFloatingLabelTextFieldWithIcon.swift; sourceTree = "<group>"; };
+		9084F44921E73AEA002C03C9 /* StarLux.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StarLux.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9084F44C21E73AEA002C03C9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9084F44E21E73AEA002C03C9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9084F45121E73AEA002C03C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9084F45321E73B34002C03C9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9084F45621E73B34002C03C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9084F45821E73B35002C03C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9084F45D21E73B3D002C03C9 /* StarLuxTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StarLuxTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9084F46121E73B3D002C03C9 /* StarLuxTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarLuxTests.swift; sourceTree = "<group>"; };
+		9084F46321E73B3D002C03C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9084F46821E73B3D002C03C9 /* StarLuxUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StarLuxUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9084F46C21E73B3D002C03C9 /* StarLuxUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarLuxUITests.swift; sourceTree = "<group>"; };
+		9084F46E21E73B3D002C03C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9084F81921E7BABC002C03C9 /* STCollapseTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STCollapseTableView.m; sourceTree = "<group>"; };
+		9084F81A21E7BABC002C03C9 /* STCollapseTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STCollapseTableView.h; sourceTree = "<group>"; };
+		9084F81B21E7BABC002C03C9 /* StarLux-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "StarLux-Bridging-Header.h"; sourceTree = "<group>"; };
+		9084F81D21E8F18A002C03C9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		90AFEB9421F0185200A704D8 /* starlux.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = starlux.db; sourceTree = SOURCE_ROOT; };
+		90AFEB9721F0C9B700A704D8 /* Color.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Color.xcassets; sourceTree = "<group>"; };
+		90AFEB9D21F1777400A704D8 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		90FF631221F2C52F00BCD08C /* SLLoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SLLoginView.swift; sourceTree = "<group>"; };
+		90FF631421F304DE00BCD08C /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		90FF632421F313E200BCD08C /* DropDown.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DropDown.h; sourceTree = "<group>"; };
+		90FF632621F313E200BCD08C /* DropDownCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DropDownCell.xib; sourceTree = "<group>"; };
+		90FF632821F313E300BCD08C /* DPDKeyboardListener.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DPDKeyboardListener.swift; sourceTree = "<group>"; };
+		90FF632921F313E300BCD08C /* DPDConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DPDConstants.swift; sourceTree = "<group>"; };
+		90FF632A21F313E300BCD08C /* DPDUIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DPDUIView+Extension.swift"; sourceTree = "<group>"; };
+		90FF632D21F313E300BCD08C /* DropDown.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DropDown.swift; sourceTree = "<group>"; };
+		90FF632E21F313E300BCD08C /* DropDownCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DropDownCell.swift; sourceTree = "<group>"; };
+		90FF632F21F313E300BCD08C /* DropDown+Appearance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DropDown+Appearance.swift"; sourceTree = "<group>"; };
+		90FF633821F3AB3700BCD08C /* userGroupMember.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userGroupMember.swift; sourceTree = "<group>"; };
+		BA5696B82E898B3C0F5E28B1 /* Pods_StarLux.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StarLux.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9084F44621E73AEA002C03C9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9015479C21EDA7B400B26748 /* libsqlite3.tbd in Frameworks */,
+				153649A0441150C7B840E2BB /* Pods_StarLux.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9084F45A21E73B3D002C03C9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F6FBE1F7B7FD0641DC1B609 /* Pods_StarLuxTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9084F46521E73B3D002C03C9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8AA001235CFB7450F082D953 /* Pods_StarLuxUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4603075CE43B6B6D14D61760 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				56D414C959C14B7DFBF25E74 /* Pods-StarLux.debug.xcconfig */,
+				415B5FD14EF1A8EA38BB8B58 /* Pods-StarLux.release.xcconfig */,
+				3D41E8A6A7539A20AA086E56 /* Pods-StarLuxTests.debug.xcconfig */,
+				605F2229549DA0797E82EF0D /* Pods-StarLuxTests.release.xcconfig */,
+				73E30309AF4EB5084501C6B6 /* Pods-StarLuxUITests.debug.xcconfig */,
+				54AFAA65C944C10A8BA68580 /* Pods-StarLuxUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		9015479D21EDBBBB00B26748 /* util */ = {
+			isa = PBXGroup;
+			children = (
+				9015479E21EDBBBB00B26748 /* flightInfo.swift */,
+				901547A021EDC31D00B26748 /* unitEvents.swift */,
+				90AFEB9D21F1777400A704D8 /* CardView.swift */,
+				90FF631421F304DE00BCD08C /* CustomTextField.swift */,
+				90FF633821F3AB3700BCD08C /* userGroupMember.swift */,
+			);
+			path = util;
+			sourceTree = "<group>";
+		};
+		9033705E221D19FF00082710 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				9033705F221D19FF00082710 /* SkyFloatingLabelTextField.swift */,
+				90337060221D19FF00082710 /* UITextField+fixCaretPosition.swift */,
+				90337061221D19FF00082710 /* SkyFloatingLabelTextFieldWithIcon.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		9084F44021E73AE9002C03C9 = {
+			isa = PBXGroup;
+			children = (
+				9084F44B21E73AEA002C03C9 /* StarLux */,
+				9084F46021E73B3D002C03C9 /* StarLuxTests */,
+				9084F46B21E73B3D002C03C9 /* StarLuxUITests */,
+				9084F44A21E73AEA002C03C9 /* Products */,
+				4603075CE43B6B6D14D61760 /* Pods */,
+				CCB9C7F58764CACEB9E00892 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		9084F44A21E73AEA002C03C9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9084F44921E73AEA002C03C9 /* StarLux.app */,
+				9084F45D21E73B3D002C03C9 /* StarLuxTests.xctest */,
+				9084F46821E73B3D002C03C9 /* StarLuxUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9084F44B21E73AEA002C03C9 /* StarLux */ = {
+			isa = PBXGroup;
+			children = (
+				9084F81721E7BABC002C03C9 /* CustomClass */,
+				9084F44C21E73AEA002C03C9 /* AppDelegate.swift */,
+				9084F44E21E73AEA002C03C9 /* ViewController.swift */,
+				90FF631221F2C52F00BCD08C /* SLLoginView.swift */,
+				9084F45021E73AEA002C03C9 /* Main.storyboard */,
+				9084F45321E73B34002C03C9 /* Assets.xcassets */,
+				90AFEB9721F0C9B700A704D8 /* Color.xcassets */,
+				9084F45521E73B34002C03C9 /* LaunchScreen.storyboard */,
+				9084F81B21E7BABC002C03C9 /* StarLux-Bridging-Header.h */,
+				9084F81D21E8F18A002C03C9 /* GoogleService-Info.plist */,
+				9084F45821E73B35002C03C9 /* Info.plist */,
+				90AFEB9421F0185200A704D8 /* starlux.db */,
+			);
+			path = StarLux;
+			sourceTree = "<group>";
+		};
+		9084F46021E73B3D002C03C9 /* StarLuxTests */ = {
+			isa = PBXGroup;
+			children = (
+				9084F46121E73B3D002C03C9 /* StarLuxTests.swift */,
+				9084F46321E73B3D002C03C9 /* Info.plist */,
+			);
+			path = StarLuxTests;
+			sourceTree = "<group>";
+		};
+		9084F46B21E73B3D002C03C9 /* StarLuxUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9084F46C21E73B3D002C03C9 /* StarLuxUITests.swift */,
+				9084F46E21E73B3D002C03C9 /* Info.plist */,
+			);
+			path = StarLuxUITests;
+			sourceTree = "<group>";
+		};
+		9084F81721E7BABC002C03C9 /* CustomClass */ = {
+			isa = PBXGroup;
+			children = (
+				9033705E221D19FF00082710 /* Sources */,
+				90FF632321F313E200BCD08C /* DropDown */,
+				9015479D21EDBBBB00B26748 /* util */,
+				9084F81821E7BABC002C03C9 /* STCollapse */,
+			);
+			path = CustomClass;
+			sourceTree = "<group>";
+		};
+		9084F81821E7BABC002C03C9 /* STCollapse */ = {
+			isa = PBXGroup;
+			children = (
+				9084F81921E7BABC002C03C9 /* STCollapseTableView.m */,
+				9084F81A21E7BABC002C03C9 /* STCollapseTableView.h */,
+			);
+			path = STCollapse;
+			sourceTree = "<group>";
+		};
+		90FF632321F313E200BCD08C /* DropDown */ = {
+			isa = PBXGroup;
+			children = (
+				90FF632421F313E200BCD08C /* DropDown.h */,
+				90FF632521F313E200BCD08C /* resources */,
+				90FF632721F313E200BCD08C /* helpers */,
+				90FF632C21F313E300BCD08C /* src */,
+			);
+			path = DropDown;
+			sourceTree = "<group>";
+		};
+		90FF632521F313E200BCD08C /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				90FF632621F313E200BCD08C /* DropDownCell.xib */,
+			);
+			path = resources;
+			sourceTree = "<group>";
+		};
+		90FF632721F313E200BCD08C /* helpers */ = {
+			isa = PBXGroup;
+			children = (
+				90FF632821F313E300BCD08C /* DPDKeyboardListener.swift */,
+				90FF632921F313E300BCD08C /* DPDConstants.swift */,
+				90FF632A21F313E300BCD08C /* DPDUIView+Extension.swift */,
+			);
+			path = helpers;
+			sourceTree = "<group>";
+		};
+		90FF632C21F313E300BCD08C /* src */ = {
+			isa = PBXGroup;
+			children = (
+				90FF632D21F313E300BCD08C /* DropDown.swift */,
+				90FF632E21F313E300BCD08C /* DropDownCell.swift */,
+				90FF632F21F313E300BCD08C /* DropDown+Appearance.swift */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		CCB9C7F58764CACEB9E00892 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9015479B21EDA7B400B26748 /* libsqlite3.tbd */,
+				BA5696B82E898B3C0F5E28B1 /* Pods_StarLux.framework */,
+				2D9704A89493C3C7ECD9D336 /* Pods_StarLuxTests.framework */,
+				78B84D2F5CB77A48267B0407 /* Pods_StarLuxUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9084F44821E73AEA002C03C9 /* StarLux */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9084F47121E73B3D002C03C9 /* Build configuration list for PBXNativeTarget "StarLux" */;
+			buildPhases = (
+				5994DA88BF809B8AEA56C5A9 /* [CP] Check Pods Manifest.lock */,
+				9084F44521E73AEA002C03C9 /* Sources */,
+				9084F44621E73AEA002C03C9 /* Frameworks */,
+				9084F44721E73AEA002C03C9 /* Resources */,
+				327155104E5DAA633CAA4B68 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StarLux;
+			productName = StarLux;
+			productReference = 9084F44921E73AEA002C03C9 /* StarLux.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9084F45C21E73B3D002C03C9 /* StarLuxTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9084F47421E73B3D002C03C9 /* Build configuration list for PBXNativeTarget "StarLuxTests" */;
+			buildPhases = (
+				29699E5E2E14B794BD87E1D0 /* [CP] Check Pods Manifest.lock */,
+				9084F45921E73B3D002C03C9 /* Sources */,
+				9084F45A21E73B3D002C03C9 /* Frameworks */,
+				9084F45B21E73B3D002C03C9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9084F45F21E73B3D002C03C9 /* PBXTargetDependency */,
+			);
+			name = StarLuxTests;
+			productName = StarLuxTests;
+			productReference = 9084F45D21E73B3D002C03C9 /* StarLuxTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9084F46721E73B3D002C03C9 /* StarLuxUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9084F47721E73B3D002C03C9 /* Build configuration list for PBXNativeTarget "StarLuxUITests" */;
+			buildPhases = (
+				BFF2BA10F2EBB663C1CAA123 /* [CP] Check Pods Manifest.lock */,
+				9084F46421E73B3D002C03C9 /* Sources */,
+				9084F46521E73B3D002C03C9 /* Frameworks */,
+				9084F46621E73B3D002C03C9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9084F46A21E73B3D002C03C9 /* PBXTargetDependency */,
+			);
+			name = StarLuxUITests;
+			productName = StarLuxUITests;
+			productReference = 9084F46821E73B3D002C03C9 /* StarLuxUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9084F44121E73AE9002C03C9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Vivek Kumar Gupta";
+				TargetAttributes = {
+					9084F44821E73AEA002C03C9 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					9084F45C21E73B3D002C03C9 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 9084F44821E73AEA002C03C9;
+					};
+					9084F46721E73B3D002C03C9 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 9084F44821E73AEA002C03C9;
+					};
+				};
+			};
+			buildConfigurationList = 9084F44421E73AE9002C03C9 /* Build configuration list for PBXProject "StarLux" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9084F44021E73AE9002C03C9;
+			productRefGroup = 9084F44A21E73AEA002C03C9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9084F44821E73AEA002C03C9 /* StarLux */,
+				9084F45C21E73B3D002C03C9 /* StarLuxTests */,
+				9084F46721E73B3D002C03C9 /* StarLuxUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9084F44721E73AEA002C03C9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9084F45721E73B34002C03C9 /* LaunchScreen.storyboard in Resources */,
+				9084F81E21E8F18C002C03C9 /* GoogleService-Info.plist in Resources */,
+				9084F45421E73B34002C03C9 /* Assets.xcassets in Resources */,
+				90FF633021F313E300BCD08C /* DropDownCell.xib in Resources */,
+				9084F45221E73AEA002C03C9 /* Main.storyboard in Resources */,
+				90AFEB9521F0185300A704D8 /* starlux.db in Resources */,
+				90AFEB9821F0C9B700A704D8 /* Color.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9084F45B21E73B3D002C03C9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9084F46621E73B3D002C03C9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		29699E5E2E14B794BD87E1D0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-StarLuxTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		327155104E5DAA633CAA4B68 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-StarLux/Pods-StarLux-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-StarLux/Pods-StarLux-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5994DA88BF809B8AEA56C5A9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-StarLux-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BFF2BA10F2EBB663C1CAA123 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-StarLuxUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9084F44521E73AEA002C03C9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9084F81C21E7BABC002C03C9 /* STCollapseTableView.m in Sources */,
+				90337064221D1A0000082710 /* SkyFloatingLabelTextFieldWithIcon.swift in Sources */,
+				901547A121EDC31D00B26748 /* unitEvents.swift in Sources */,
+				90FF633921F3AB3700BCD08C /* userGroupMember.swift in Sources */,
+				90FF633521F313E300BCD08C /* DropDown.swift in Sources */,
+				90FF631321F2C52F00BCD08C /* SLLoginView.swift in Sources */,
+				90FF633121F313E300BCD08C /* DPDKeyboardListener.swift in Sources */,
+				90FF633321F313E300BCD08C /* DPDUIView+Extension.swift in Sources */,
+				90337063221D1A0000082710 /* UITextField+fixCaretPosition.swift in Sources */,
+				90FF633621F313E300BCD08C /* DropDownCell.swift in Sources */,
+				9084F44F21E73AEA002C03C9 /* ViewController.swift in Sources */,
+				90FF631521F304DE00BCD08C /* CustomTextField.swift in Sources */,
+				9084F44D21E73AEA002C03C9 /* AppDelegate.swift in Sources */,
+				90FF633721F313E300BCD08C /* DropDown+Appearance.swift in Sources */,
+				90AFEB9E21F1777400A704D8 /* CardView.swift in Sources */,
+				90FF633221F313E300BCD08C /* DPDConstants.swift in Sources */,
+				90337062221D1A0000082710 /* SkyFloatingLabelTextField.swift in Sources */,
+				9015479F21EDBBBB00B26748 /* flightInfo.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9084F45921E73B3D002C03C9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9084F46221E73B3D002C03C9 /* StarLuxTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9084F46421E73B3D002C03C9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9084F46D21E73B3D002C03C9 /* StarLuxUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9084F45F21E73B3D002C03C9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9084F44821E73AEA002C03C9 /* StarLux */;
+			targetProxy = 9084F45E21E73B3D002C03C9 /* PBXContainerItemProxy */;
+		};
+		9084F46A21E73B3D002C03C9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9084F44821E73AEA002C03C9 /* StarLux */;
+			targetProxy = 9084F46921E73B3D002C03C9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9084F45021E73AEA002C03C9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9084F45121E73AEA002C03C9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9084F45521E73B34002C03C9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9084F45621E73B34002C03C9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9084F46F21E73B3D002C03C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9084F47021E73B3D002C03C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9084F47221E73B3D002C03C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 56D414C959C14B7DFBF25E74 /* Pods-StarLux.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/StarLux/FZBooking",
+				);
+				INFOPLIST_FILE = StarLux/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/StarLux/FZBooking/CardIO",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.starlux.starlux;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/$(PROJECT_NAME)/$(PROJECT_NAME)-Bridging-Header.h";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9084F47321E73B3D002C03C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 415B5FD14EF1A8EA38BB8B58 /* Pods-StarLux.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/StarLux/FZBooking",
+				);
+				INFOPLIST_FILE = StarLux/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/StarLux/FZBooking/CardIO",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.starlux.starlux;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/$(PROJECT_NAME)/$(PROJECT_NAME)-Bridging-Header.h";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		9084F47521E73B3D002C03C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D41E8A6A7539A20AA086E56 /* Pods-StarLuxTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = StarLuxTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.vivek.StarLuxTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StarLux.app/StarLux";
+			};
+			name = Debug;
+		};
+		9084F47621E73B3D002C03C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 605F2229549DA0797E82EF0D /* Pods-StarLuxTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = StarLuxTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.vivek.StarLuxTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StarLux.app/StarLux";
+			};
+			name = Release;
+		};
+		9084F47821E73B3D002C03C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 73E30309AF4EB5084501C6B6 /* Pods-StarLuxUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = StarLuxUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.vivek.StarLuxUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = StarLux;
+			};
+			name = Debug;
+		};
+		9084F47921E73B3D002C03C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 54AFAA65C944C10A8BA68580 /* Pods-StarLuxUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = StarLuxUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.vivek.StarLuxUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = StarLux;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9084F44421E73AE9002C03C9 /* Build configuration list for PBXProject "StarLux" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9084F46F21E73B3D002C03C9 /* Debug */,
+				9084F47021E73B3D002C03C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9084F47121E73B3D002C03C9 /* Build configuration list for PBXNativeTarget "StarLux" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9084F47221E73B3D002C03C9 /* Debug */,
+				9084F47321E73B3D002C03C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9084F47421E73B3D002C03C9 /* Build configuration list for PBXNativeTarget "StarLuxTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9084F47521E73B3D002C03C9 /* Debug */,
+				9084F47621E73B3D002C03C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9084F47721E73B3D002C03C9 /* Build configuration list for PBXNativeTarget "StarLuxUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9084F47821E73B3D002C03C9 /* Debug */,
+				9084F47921E73B3D002C03C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9084F44121E73AE9002C03C9 /* Project object */;
+}
