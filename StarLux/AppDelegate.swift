@@ -1,5 +1,5 @@
 
-//
+
 
 import UIKit
 import Firebase
@@ -20,6 +20,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
         FirebaseApp.configure()
         Auth.auth().signInAnonymously(completion: nil)
         registerForPushNotifications()
+        MSAppCenter.start("85b150f3-3337-4692-9222-ea00834d767c", withServices:[
+            MSAnalytics.self,
+            MSCrashes.self
+            ])
+        
       
         return true
     }
