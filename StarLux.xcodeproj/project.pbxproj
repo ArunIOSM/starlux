@@ -59,13 +59,17 @@
 
 /* Begin PBXFileReference section */
 		2D9704A89493C3C7ECD9D336 /* Pods_StarLuxTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StarLuxTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		32DFB463FAA076BBE7DF3C0E /* Pods-StarLuxTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StarLuxTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StarLuxTests/Pods-StarLuxTests.debug.xcconfig"; sourceTree = "<group>"; };
 		3D41E8A6A7539A20AA086E56 /* Pods-StarLuxTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StarLuxTests.debug.xcconfig"; path = "Target Support Files/Pods-StarLuxTests/Pods-StarLuxTests.debug.xcconfig"; sourceTree = "<group>"; };
 		415B5FD14EF1A8EA38BB8B58 /* Pods-StarLux.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StarLux.release.xcconfig"; path = "Target Support Files/Pods-StarLux/Pods-StarLux.release.xcconfig"; sourceTree = "<group>"; };
+		4AA80252E9AFFECDF01CC306 /* Pods-StarLux.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StarLux.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StarLux/Pods-StarLux.debug.xcconfig"; sourceTree = "<group>"; };
 		54AFAA65C944C10A8BA68580 /* Pods-StarLuxUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StarLuxUITests.release.xcconfig"; path = "Target Support Files/Pods-StarLuxUITests/Pods-StarLuxUITests.release.xcconfig"; sourceTree = "<group>"; };
 		56D414C959C14B7DFBF25E74 /* Pods-StarLux.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StarLux.debug.xcconfig"; path = "Target Support Files/Pods-StarLux/Pods-StarLux.debug.xcconfig"; sourceTree = "<group>"; };
+		5CC47063E8B2281E27C73AED /* Pods-StarLux.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StarLux.release.xcconfig"; path = "Pods/Target Support Files/Pods-StarLux/Pods-StarLux.release.xcconfig"; sourceTree = "<group>"; };
 		605F2229549DA0797E82EF0D /* Pods-StarLuxTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StarLuxTests.release.xcconfig"; path = "Target Support Files/Pods-StarLuxTests/Pods-StarLuxTests.release.xcconfig"; sourceTree = "<group>"; };
 		73E30309AF4EB5084501C6B6 /* Pods-StarLuxUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StarLuxUITests.debug.xcconfig"; path = "Target Support Files/Pods-StarLuxUITests/Pods-StarLuxUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		78B84D2F5CB77A48267B0407 /* Pods_StarLuxUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StarLuxUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		87FAEE1BF2271E77E5D09B0A /* Pods-StarLuxTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StarLuxTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-StarLuxTests/Pods-StarLuxTests.release.xcconfig"; sourceTree = "<group>"; };
 		9015479B21EDA7B400B26748 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		9015479E21EDBBBB00B26748 /* flightInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = flightInfo.swift; sourceTree = "<group>"; };
 		901547A021EDC31D00B26748 /* unitEvents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = unitEvents.swift; sourceTree = "<group>"; };
@@ -103,7 +107,9 @@
 		90FF632E21F313E300BCD08C /* DropDownCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DropDownCell.swift; sourceTree = "<group>"; };
 		90FF632F21F313E300BCD08C /* DropDown+Appearance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DropDown+Appearance.swift"; sourceTree = "<group>"; };
 		90FF633821F3AB3700BCD08C /* userGroupMember.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userGroupMember.swift; sourceTree = "<group>"; };
+		9D724059BA20CEE4401C2264 /* Pods-StarLuxUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StarLuxUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StarLuxUITests/Pods-StarLuxUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		BA5696B82E898B3C0F5E28B1 /* Pods_StarLux.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StarLux.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6E9DF125C2644D5F9B0B9D0 /* Pods-StarLuxUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StarLuxUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-StarLuxUITests/Pods-StarLuxUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +150,12 @@
 				605F2229549DA0797E82EF0D /* Pods-StarLuxTests.release.xcconfig */,
 				73E30309AF4EB5084501C6B6 /* Pods-StarLuxUITests.debug.xcconfig */,
 				54AFAA65C944C10A8BA68580 /* Pods-StarLuxUITests.release.xcconfig */,
+				4AA80252E9AFFECDF01CC306 /* Pods-StarLux.debug.xcconfig */,
+				5CC47063E8B2281E27C73AED /* Pods-StarLux.release.xcconfig */,
+				32DFB463FAA076BBE7DF3C0E /* Pods-StarLuxTests.debug.xcconfig */,
+				87FAEE1BF2271E77E5D09B0A /* Pods-StarLuxTests.release.xcconfig */,
+				9D724059BA20CEE4401C2264 /* Pods-StarLuxUITests.debug.xcconfig */,
+				F6E9DF125C2644D5F9B0B9D0 /* Pods-StarLuxUITests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -462,22 +474,11 @@
 			files = (
 			);
 			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-StarLux/Pods-StarLux-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
-				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
-				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
-				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-StarLux/Pods-StarLux-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-StarLux/Pods-StarLux-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

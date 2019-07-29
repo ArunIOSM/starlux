@@ -5,7 +5,9 @@ import UIKit
 import Firebase
 import FirebaseAuth
 import UserNotifications
-
+import AppCenter
+import AppCenterAnalytics
+import AppCenterCrashes
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterDelegate {
@@ -18,6 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
         FirebaseApp.configure()
         Auth.auth().signInAnonymously(completion: nil)
         registerForPushNotifications()
+      
         return true
     }
 

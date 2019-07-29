@@ -6,12 +6,12 @@ target 'StarLux' do
   use_frameworks!
 
   # Pods for StarLux
-
-	pod 'Firebase/Core'
+  pod 'Firebase/Core'
   pod 'Firebase/Storage'
   pod 'Firebase/Auth'
   pod 'Firebase/Database'
-  
+  pod 'AppCenter'
+
   target 'StarLuxTests' do
     inherit! :search_paths
     # Pods for testing
