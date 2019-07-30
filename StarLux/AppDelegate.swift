@@ -19,7 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
         // Override point for customization after application launch.
         FirebaseApp.configure()
         Auth.auth().signInAnonymously(completion: nil)
-        registerForPushNotifications()
+    //    registerForPushNotifications()
         MSAppCenter.start("85b150f3-3337-4692-9222-ea00834d767c", withServices:[
             MSAnalytics.self,
             MSCrashes.self
@@ -51,11 +51,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
-    func registerForPushNotifications() {
-        UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound]) {
-            (granted, error) in
-            print("Permission granted: \(granted)")
-        }
-    }
+//    func registerForPushNotifications() {
+//        UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound]) {
+//            (granted, error) in
+//            print("Permission granted: \(granted)")
+//        }
+//    }
 }
 
