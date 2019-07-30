@@ -3,7 +3,7 @@
 
 import UIKit
 import Firebase
-import FirebaseAuth
+//import FirebaseAuth
 import UserNotifications
 import AppCenter
 import AppCenterAnalytics
@@ -18,7 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         FirebaseApp.configure()
-        Auth.auth().signInAnonymously(completion: nil)
+        //Auth.auth().signInAnonymously(completion: nil)
     //    registerForPushNotifications()
         MSAppCenter.start("85b150f3-3337-4692-9222-ea00834d767c", withServices:[
             MSAnalytics.self,
