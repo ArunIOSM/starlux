@@ -13,7 +13,7 @@ target 'StarLux' do
   # pod 'Firebase/Auth'
   #pod 'Firebase/Auth', '~> (5.4)'
 
-  pod 'Firebase/Database'
+  # pod 'Firebase/Database'
   pod 'AppCenter'
 
   target 'StarLuxTests' do
