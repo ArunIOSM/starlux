@@ -7,8 +7,12 @@ target 'StarLux' do
   
   # Pods for StarLux
   pod 'Firebase/Core'
+  #pod 'Firebase/Core', '~> 5.9.0'
+
   pod 'Firebase/Storage'
   pod 'Firebase/Auth'
+  #pod 'Firebase/Auth', '~> (5.4)'
+
   pod 'Firebase/Database'
   pod 'AppCenter'
 
