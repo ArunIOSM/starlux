@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		153649A0441150C7B840E2BB /* Pods_StarLux.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA5696B82E898B3C0F5E28B1 /* Pods_StarLux.framework */; };
 		2F6FBE1F7B7FD0641DC1B609 /* Pods_StarLuxTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D9704A89493C3C7ECD9D336 /* Pods_StarLuxTests.framework */; };
-		8AA001235CFB7450F082D953 /* Pods_StarLuxUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78B84D2F5CB77A48267B0407 /* Pods_StarLuxUITests.framework */; };
 		9015479C21EDA7B400B26748 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 9015479B21EDA7B400B26748 /* libsqlite3.tbd */; };
 		9015479F21EDBBBB00B26748 /* flightInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9015479E21EDBBBB00B26748 /* flightInfo.swift */; };
 		901547A121EDC31D00B26748 /* unitEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901547A021EDC31D00B26748 /* unitEvents.swift */; };
@@ -38,6 +37,7 @@
 		90FF633621F313E300BCD08C /* DropDownCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90FF632E21F313E300BCD08C /* DropDownCell.swift */; };
 		90FF633721F313E300BCD08C /* DropDown+Appearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90FF632F21F313E300BCD08C /* DropDown+Appearance.swift */; };
 		90FF633921F3AB3700BCD08C /* userGroupMember.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90FF633821F3AB3700BCD08C /* userGroupMember.swift */; };
+		A2073D0662533C5297ADB4E0 /* libPods-StarLuxUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CE8FC06BB1E83832B3ED269 /* libPods-StarLuxUITests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +58,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2CE8FC06BB1E83832B3ED269 /* libPods-StarLuxUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-StarLuxUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D9704A89493C3C7ECD9D336 /* Pods_StarLuxTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StarLuxTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		32DFB463FAA076BBE7DF3C0E /* Pods-StarLuxTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StarLuxTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StarLuxTests/Pods-StarLuxTests.debug.xcconfig"; sourceTree = "<group>"; };
 		3D41E8A6A7539A20AA086E56 /* Pods-StarLuxTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StarLuxTests.debug.xcconfig"; path = "Target Support Files/Pods-StarLuxTests/Pods-StarLuxTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -68,7 +69,6 @@
 		5CC47063E8B2281E27C73AED /* Pods-StarLux.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StarLux.release.xcconfig"; path = "Pods/Target Support Files/Pods-StarLux/Pods-StarLux.release.xcconfig"; sourceTree = "<group>"; };
 		605F2229549DA0797E82EF0D /* Pods-StarLuxTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StarLuxTests.release.xcconfig"; path = "Target Support Files/Pods-StarLuxTests/Pods-StarLuxTests.release.xcconfig"; sourceTree = "<group>"; };
 		73E30309AF4EB5084501C6B6 /* Pods-StarLuxUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StarLuxUITests.debug.xcconfig"; path = "Target Support Files/Pods-StarLuxUITests/Pods-StarLuxUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		78B84D2F5CB77A48267B0407 /* Pods_StarLuxUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StarLuxUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		87FAEE1BF2271E77E5D09B0A /* Pods-StarLuxTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StarLuxTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-StarLuxTests/Pods-StarLuxTests.release.xcconfig"; sourceTree = "<group>"; };
 		9015479B21EDA7B400B26748 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		9015479E21EDBBBB00B26748 /* flightInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = flightInfo.swift; sourceTree = "<group>"; };
@@ -134,7 +134,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8AA001235CFB7450F082D953 /* Pods_StarLuxUITests.framework in Frameworks */,
+				A2073D0662533C5297ADB4E0 /* libPods-StarLuxUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,7 +306,7 @@
 				9015479B21EDA7B400B26748 /* libsqlite3.tbd */,
 				BA5696B82E898B3C0F5E28B1 /* Pods_StarLux.framework */,
 				2D9704A89493C3C7ECD9D336 /* Pods_StarLuxTests.framework */,
-				78B84D2F5CB77A48267B0407 /* Pods_StarLuxUITests.framework */,
+				2CE8FC06BB1E83832B3ED269 /* libPods-StarLuxUITests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";

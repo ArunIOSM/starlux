@@ -17,13 +17,18 @@ target 'StarLux' do
   pod 'AppCenter'
 
   target 'StarLuxTests' do
+
     inherit! :search_paths
     # Pods for testing
+    end
   end
 
   target 'StarLuxUITests' do
+    
     inherit! :search_paths
+    
+    
     # Pods for testing
   end
 
-end
+
